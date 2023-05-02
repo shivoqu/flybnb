@@ -10,7 +10,7 @@ import { User } from "@prisma/client";
 import { signOut } from "next-auth/react";
 
 interface UsermenuProps {
-  currentUser: User | null;
+  currentUser?: User | null;
 }
 
 const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
