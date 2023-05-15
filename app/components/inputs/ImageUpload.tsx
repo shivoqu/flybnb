@@ -9,6 +9,8 @@ declare global {
   var cloudinary: any;
 }
 
+const uploadPreset = "adawisxk";
+
 interface ImageUploadProps {
   onChange: (value: string) => void;
   value: string;
@@ -16,37 +18,44 @@ interface ImageUploadProps {
 
 const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
   const handleUpload = useCallback(
-    (res: any) => {
-      onChange(res.info.secure_url);
+    (result: any) => {
+      onChange(result.info.secure_url);
     },
     [onChange]
   );
+
   return (
     <CldUploadWidget
       onUpload={handleUpload}
-      uploadPreset="thgxg53u"
       options={{
         maxFiles: 1,
       }}
+      uploadPreset="adawisxk"
     >
       {({ open }) => {
+        function handleOnClick(e: { preventDefault: () => void; }) {
+          e.preventDefault();
+          open?.();
+        }
         return (
-          <div
-            className="relative
-              cursor-pointer
-              hover:opacity-70
-              transition
-              border-dashed
-              border-2
-              p-20
-              border-neutral-300
-              flex
-              flex-col
-              justify-center
-              items-center
-              gap-4
-              text-neutral-600"
-            onClick={() => open?.()}
+          <button
+            className="
+                        relative
+                         cursor-pointer
+                         hover:opcity-70
+                         transition
+                         border-dashed
+                         border-2
+                         p-20
+                         border-neutral-300
+                         flex
+                         flex-col
+                         justify-center
+                         items-center
+                         gap-4
+                         text-neutral-600
+          "
+            onClick={handleOnClick}
           >
             <TbPhotoPlus size={50} />
             <div className="font-semibold text-lg">Click to upload</div>
@@ -60,7 +69,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({ onChange, value }) => {
                 />
               </div>
             )}
-          </div>
+          </button>
         );
       }}
     </CldUploadWidget>
