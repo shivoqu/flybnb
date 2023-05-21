@@ -1,8 +1,14 @@
-# Flybnb
+<h1 align="center"><span style="color:#FF385C">Flybnb</span></h1>
 
-This project is a clone of the popular accommodation rental platform Airbnb. It aims to replicate the core functionality and user experience of Airbnb, allowing users to search and book accommodations and manage their listings.
+<p align="center">
+  <img src="path/to/your/project/logo.png" alt="Project Logo" width="200" height="200">
+</p>
 
-## Features
+<p align="center">
+  This project is a clone of the popular accommodation rental platform Airbnb. It aims to replicate the core functionality and user experience of Airbnb, allowing users to search and book accommodations and manage their listings.
+</p>
+
+## ✨ Features
 
 - User authentication: Sign up, log in, and log out functionality. Integration of Google and GitHub.
 - Accommodation search: Users can search for available accommodations based on location, dates, and other filters.
@@ -14,9 +20,8 @@ This project is a clone of the popular accommodation rental platform Airbnb. It 
 - Properties: Users can view/edit their properties from a respective page.
 - Favorite listings: Users can favorite/unfavorite listings.
 
+## 💻 Technologies Used
 
-## Technologies Used
-
-- Next.js 13 
-- Styling: Tailwind
-- Database: MongoDB, Prisma
+- <span style="color:#61DAFB">Next.js 13</span>
+- <span style="color:#38B2AC">Styling: Tailwind</span>
+- <span style="color:#7F9CF5">Database: MongoDB, Prisma</span>
