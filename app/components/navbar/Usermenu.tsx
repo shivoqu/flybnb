@@ -2,7 +2,7 @@
 
 import { AiOutlineMenu } from "react-icons/ai";
 import Avatar from "../Avatar";
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import MenuItem from "./MenuItem";
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
@@ -23,6 +23,24 @@ const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
   const rentModal = useRentModal();
 
   const router = useRouter();
+
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleOutsideClick = (event: MouseEvent) => {
+      console.log("yo", isOpen);
+
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener("click", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("click", handleOutsideClick);
+    };
+  }, []);
 
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
@@ -55,6 +73,7 @@ const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
           Flybnb your home
         </div>
         <div
+          ref={menuRef}
           onClick={toggleOpen}
           className="p-4
         md:py-1
@@ -82,7 +101,7 @@ const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
           className="
             absolute 
             rounded-xl 
-            shadow-md 
+            shadow-lg 
             w-[40vw] 
             md:w-3/4 
             bg-white 
