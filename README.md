@@ -8,17 +8,16 @@
   This project is a clone of the popular accommodation rental platform Airbnb. It aims to replicate the core functionality and user experience of Airbnb, allowing users to search and book accommodations and manage their listings.
 </p>
 
-## ✨ Features
 ![screenshot](/public/screenshots/home.png "Listings")
+## ✨ Features
 - User authentication: Sign up, log in, and log out functionality. Integration of Google and GitHub.
 ![screenshot](/public/screenshots/login.png "Authentication")
 - Accommodation search: Users can search for available accommodations based on location, dates, and other filters.
 ![screenshot](/public/screenshots/filter.png "Fiiltering")
 - Booking management: Users can book accommodations, view their bookings, and manage their reservations.
 ![screenshot](/public/screenshots/reservations.png "Reservations")
-- Smart calendar: Prevents customers from renting an already taken date.
-- Maps: Locations are pinned on the map for user convenience.
-![screenshot](/public/screenshots/login.png "Booking")
+- Calendar and maps for user convenience.
+![screenshot](/public/screenshots/listing.png "Booking")
 - Accommodation listing: Hosts can create listings for their properties, including details such as location, description, pricing, and amenities.
 - Trips management: Users can view and manage their booking history.
 - Properties: Users can view/edit their properties from a respective page.
