@@ -9,16 +9,20 @@
 </p>
 
 ## ✨ Features
-
+![screenshot](/public/screenshots/home.png "Listings")
 - User authentication: Sign up, log in, and log out functionality. Integration of Google and GitHub.
+![screenshot](/public/screenshots/login.png "Authentication")
 - Accommodation search: Users can search for available accommodations based on location, dates, and other filters.
-- Accommodation listing: Hosts can create listings for their properties, including details such as location, description, pricing, and amenities.
+![screenshot](/public/screenshots/filter.png "Fiiltering")
 - Booking management: Users can book accommodations, view their bookings, and manage their reservations.
-- Trips management: Users can view and manage their booking history.
-- Maps: Locations are pinned on the map for user convenience.
+![screenshot](/public/screenshots/reservations.png "Reservations")
 - Smart calendar: Prevents customers from renting an already taken date.
+- Maps: Locations are pinned on the map for user convenience.
+![screenshot](/public/screenshots/login.png "Booking")
+- Accommodation listing: Hosts can create listings for their properties, including details such as location, description, pricing, and amenities.
+- Trips management: Users can view and manage their booking history.
 - Properties: Users can view/edit their properties from a respective page.
-- Favorite listings: Users can favorite/unfavorite listings.
+- Favorite listings: Users can favorite/unfavorite listings which show up on the users "My favorites" page.
 
 ## 💻 Technologies Used
 
