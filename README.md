@@ -26,6 +26,6 @@
 
 ## 💻 Technologies Used
 
-- <span style="color:#61DAFB">Next.js 13</span>
-- <span style="color:#38B2AC">Styling: Tailwind</span>
-- <span style="color:#7F9CF5">Database: MongoDB, Prisma</span>
+- Front-end: React.js, Next.js, Tailwind CSS, HTML 
+- Back-end: Node.js, Express.js
+- Database: MongoDB, Prisma
