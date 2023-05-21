@@ -1,7 +1,7 @@
 <h1 align="center"><span style="color:#FF385C">Flybnb</span></h1>
 
 <p align="center">
-  <img src="path/to/your/project/logo.png" alt="Project Logo" width="200" height="200">
+  <img src="/public/images/flybnb_logo.png" alt="Project Logo" width="200" height="200">
 </p>
 
 <p align="center">
