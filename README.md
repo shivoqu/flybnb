@@ -8,6 +8,10 @@
   This project is a clone of the popular accommodation rental platform Airbnb. It aims to replicate the core functionality and user experience of Airbnb, allowing users to search and book accommodations and manage their listings.
 </p>
 
+<a align="center">
+  https://flybnb-beta.vercel.app/
+</a>
+
 ![screenshot](/public/screenshots/home.png "Listings")
 ## ✨ Features
 - User authentication: Sign up, log in, and log out functionality. Integration of Google and GitHub.
